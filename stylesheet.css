@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+
+    color: #555;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #bbb;
+}
+
+main {
+    padding: 40px 0;
+}
+
+main section {
+    margin-bottom: 40px;
+}
+
+.hero figure {
+    margin: 0;
+    overflow: hidden;
+    max-height: 500px; /* 必要に応じて調整 */
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease-out;
+}
+
+.hero img:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about h2, .menu h2, aside h2 {
+    font-size: 2em;
+    color: #555;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.about p, aside p {
+    line-height: 0.5;
+    margin-bottom: 20px;
+}
+
+.menu table {
+    width: 80%;
+    margin: 20px auto 0;
+    border-collapse: collapse;
+}
+
+.menu td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.menu td:last-child {
+    text-align: right;
+}
+
+aside {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+aside figure {
+    margin: 20px auto;
+    max-width: 150px;
+}
+
+aside img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
