@@ -6,7 +6,7 @@ html, body {
     margin: 0; /* 余白をなくす */
     font-family: 'Noto Sans JP', sans-serif; /* 日本語フォント */
     text-align: center; /* テキストを中央揃え */
-    background: linear-gradient(135deg, #a2d2ff, #d0f4de); /* 水色系のグラデーション背景 */
+    background: rgba(255, 255, 255, 1); /* 水色系のグラデーション背景 */
     color: #333; /* 文字の基本色 */
 }
 
@@ -18,7 +18,7 @@ body {
 
 /* ヘッダー部分 */
 header {
-    background: rgba(255, 255, 255, 1);
+    background: rgba(255, 224, 189, 0.7);
     color: #000080; /* 文字色を白に */
     padding: 20px; /* 内側の余白 */
     font-size: 24px; /* 文字の大きさ */
