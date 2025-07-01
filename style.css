@@ -6,12 +6,12 @@ html, body {
     margin: 0; /* 余白をなくす */
     font-family: 'Noto Sans JP', sans-serif; /* 日本語フォント */
     text-align: center; /* テキストを中央揃え */
-    background: rgba(255, 255, 255, 1); /* 水色系のグラデーション背景 */
+    background: rgba(255, 224, 189, 1); /* スクリーンショットの背景色に近づける */
     color: #333; /* 文字の基本色 */
 }
 a {
-    text-decoration: none; /* これが下線を消す設定です */
-    color: inherit; /* リンクの文字色を親要素から継承（今回はアイコンなので視覚的な変化は少ないですが、一般的に推奨） */
+    text-decoration: none; /* 下線を消す */
+    color: inherit; /* リンクの文字色を親要素から継承 */
 }
 
 /* フレックスボックスでコンテンツを画面いっぱいに広げる */
@@ -22,8 +22,8 @@ body {
 
 /* ヘッダー部分 */
 header {
-    background: rgba(255, 224, 189, 0.7);
-    color: #000080; /* 文字色を白に */
+    background: rgba(255, 224, 189, 0.7); /* スクリーンショットのヘッダー色に近づける */
+    color: #000080; /* 文字色 */
     padding: 20px; /* 内側の余白 */
     font-size: 24px; /* 文字の大きさ */
 }
@@ -42,36 +42,67 @@ main {
     background: white; /* 背景色を白に */
     padding: 20px; /* 内側の余白 */
     width: 80%; /* 横幅を80%に */
-    max-width: 400px; /* 最大幅を400pxに */
+    max-width: 600px; /* カードの最大幅を広げる */
     border-radius: 10px; /* 角を丸く */
-    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  影をつけて立体感を出す */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 影をつけて立体感を出す */
+    display: flex; /* Flexboxコンテナにする */
+    align-items: center; /* 垂直方向中央揃え */
     text-align: left; /* テキストを左揃え */
 }
 
-/* プロフィール画像 */
+/* プロフィール画像 (お寿司) */
 .profile img {
-    width: 300px; /* 幅100px */
-    height: 300px; /* 高さ100px */
-    border-radius: 50%; /* 円形に */
-    object-fit: cover; /* 画像を適切にトリミング */
-    margin-bottom: 10px; /* 画像下に余白 */
-    /* ↓↓↓ ここに追記または修正 ↓↓↓ */
-    margin-left: -50px; /* 例: 左に10px移動。値は調整してください */
-    /* ↑↑↑ ここに追記または修正 ↑↑↑ */
+    width: 250px; /* 幅を大きく指定 */
+    height: auto; /* 高さは自動調整 */
+    border-radius: 0; /* 角は丸めない */
+    object-fit: contain; /* 画像全体を表示するように */
+    margin-right: 30px; /* テキストとの間隔を作る */
+    margin-left: 0; /* 以前の負のマージンをリセット */
+    margin-bottom: 0; /* 下の余白をリセット */
 }
-/* メールアイコンのスタイル */
+
+/* プロフィールコンテンツ (画像以外の部分) */
+.profile-content {
+    display: flex;
+    flex-direction: column; /* 縦方向に並べる */
+    justify-content: center; /* 垂直方向中央揃え */
+    flex-grow: 1; /* 残りのスペースを埋める */
+}
+
+/* セクションタイトル (名前など) */
+.profile-content h2 { /* h2セレクタを限定 */
+    color: #000080; /* 文字色 */
+    font-size: 32px; /* 名前の文字サイズを大きく */
+    margin-top: 0; /* 上の余白をなくす */
+    margin-bottom: 10px; /* 下の余白 */
+    text-align: left;
+}
+/* その他のpタグのスタイル */
+.profile-content p {
+    font-size: 20px; /* 文字サイズを調整 */
+    margin-top: 0;
+    margin-bottom: 5px; /* 段落間の余白 */
+    text-align: left;
+}
+
+
+/* アイコンのコンテナ */
+.contact-icons {
+    margin-top: 15px; /* アイコンの上の余白 */
+    text-align: left;
+}
+
+/* メールアイコンとGitHubアイコンの共通スタイル */
 .mail-icon {
-    width: 24px; /* 必要に応じてサイズ調整 */
-    height: 24px; /* 必要に応じてサイズ調整 */
-    vertical-align: middle; /* 必要であれば */
+    width: 32px; /* アイコンサイズを調整 */
+    height: 32px; /* アイコンサイズを調整 */
+    vertical-align: middle; /* 垂直方向中央揃え */
     border-radius: 0; /* 角を丸めない */
 }
 
-/* セクションタイトル */
-h2 {
-    color: #000080; /* 水色系のアクセントカラー */
-    font-size: 20px; /* 文字サイズ */
-    margin-top: 5px; /* 上の余白 */
+/* GitHubアイコン専用の調整 */
+.github-icon {
+    margin-left: 20px; /* GitHubアイコンの左側に余白 */
 }
 
 /* フッター（ページ最下部に固定） */
