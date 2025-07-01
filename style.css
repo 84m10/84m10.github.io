@@ -52,8 +52,12 @@ main {
 .profile img {
     width: 100px; /* 幅100px */
     height: 100px; /* 高さ100px */
+    border-radius: 50%; /* 円形に */
     object-fit: cover; /* 画像を適切にトリミング */
     margin-bottom: 10px; /* 画像下に余白 */
+    /* ↓↓↓ ここに追記または修正 ↓↓↓ */
+    margin-left: -10px; /* 例: 左に10px移動。値は調整してください */
+    /* ↑↑↑ ここに追記または修正 ↑↑↑ */
 }
 /* メールアイコンのスタイル */
 .mail-icon {
