@@ -6,8 +6,16 @@ html, body {
     margin: 0; /* 余白をなくす */
     font-family: 'Noto Sans JP', sans-serif; /* 日本語フォント */
     text-align: center; /* テキストを中央揃え */
-    background: linear-gradient(135deg, #a2d2ff, #d0f4de); /* 水色系のグラデーション背景 */
+    /* 背景色は元のグラデーションに戻すか、指定された色にするか選択してください */
+    /* background: linear-gradient(135deg, #a2d2ff, #d0f4de); /* 元の水色系グラデーション */
+    background: rgba(255, 255, 255, 1); /* ご希望の完全な白 */
     color: #333; /* 文字の基本色 */
+}
+
+/* リンクのデフォルトスタイルをリセットするための追加 (下線を消す) */
+a {
+    text-decoration: none; /* これが下線を消す設定です */
+    color: inherit; /* リンクの文字色を親要素から継承 */
 }
 
 /* フレックスボックスでコンテンツを画面いっぱいに広げる */
@@ -18,9 +26,10 @@ body {
 
 /* ヘッダー部分 */
 header {
-    /* 背景色を白に変更 (以前はrgba(255, 224, 189, 0.7) で肌色系でした) */
-    background: rgba(255, 255, 255, 0.7); /* 半透明の白背景 */
-    color: white; /* 文字色を白に */
+    /* 背景色を元の肌色系の半透明に戻すか、白にするか選択してください */
+    background: rgba(255, 224, 189, 0.7); /* 元の肌色系の半透明 */
+    /* background: rgba(255, 255, 255, 0.7); /* 前回の白 */
+    color: #000080; /* 文字色を白に (元の指定は white でしたが、今は #000080 に変更されています) */
     padding: 20px; /* 内側の余白 */
     font-size: 24px; /* 文字の大きさ */
 }
@@ -34,7 +43,7 @@ main {
     padding: 20px; /* 上下左右の余白 */
 }
 
-/* プロフィールカードのデザイン */
+/* プロフィールカードのデザイン (白い背景を維持) */
 .profile {
     background: white; /* 背景色を白に */
     padding: 20px; /* 内側の余白 */
@@ -45,7 +54,7 @@ main {
     text-align: left; /* テキストを左揃え */
 }
 
-/* プロフィール画像 (sushi.jpg や profile.jpg に適用) */
+/* プロフィール画像 (円形を維持) */
 .profile img {
     width: 100px; /* 幅100px */
     height: 100px; /* 高さ100px */
@@ -54,12 +63,11 @@ main {
     margin-bottom: 10px; /* 画像下に余白 */
 }
 
-/* メールアイコン・GitHubアイコンなど、角を丸めたくない画像用 */
-/* HTMLのimgタグに class="mail-icon" を追加することで適用されます */
+/* メールアイコン・GitHubアイコンなど、角を丸めたくない画像用 (下線防止のために border-radius:0 を含む) */
 .mail-icon {
+    /* HTMLのstyle属性で width/height/vertical-align は指定されているので、
+       ここでは border-radius: 0; のみを定義 */
     border-radius: 0; /* 角を丸めない */
-    /* width, height, vertical-align はHTMLのstyle属性で指定しているので、
-       ここにはなくても機能しますが、一元管理したい場合はここに移動することも可能です。 */
 }
 
 /* セクションタイトル */
