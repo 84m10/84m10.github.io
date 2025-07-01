@@ -51,6 +51,13 @@ main {
     object-fit: cover; /* 画像を適切にトリミング */
     margin-bottom: 10px; /* 画像下に余白 */
 }
+/* メールアイコンのスタイル */
+.mail-icon {
+    width: 24px; /* 必要に応じてサイズ調整 */
+    height: 24px; /* 必要に応じてサイズ調整 */
+    vertical-align: middle; /* 必要であれば */
+    border-radius: 0; /* 角を丸めない */
+}
 
 /* セクションタイトル */
 h2 {
