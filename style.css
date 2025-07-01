@@ -94,15 +94,15 @@ main {
 
 /* メールアイコンとGitHubアイコンの共通スタイル */
 .mail-icon {
-    width: 32px; /* アイコンサイズを調整 */
-    height: 32px; /* アイコンサイズを調整 */
+    width: 24px; /* アイコンサイズを調整 */
+    height: 24px; /* アイコンサイズを調整 */
     vertical-align: middle; /* 垂直方向中央揃え */
     border-radius: 0; /* 角を丸めない */
 }
 
 /* GitHubアイコン専用の調整 */
 .github-icon {
-    margin-left: 20px; /* GitHubアイコンの左側に余白 */
+    margin-left: 40px; /* GitHubアイコンの左側に余白 */
 }
 
 /* フッター（ページ最下部に固定） */
