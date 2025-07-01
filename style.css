@@ -94,8 +94,8 @@ main {
 
 /* メールアイコンとGitHubアイコンの共通スタイル */
 .mail-icon {
-    width: 24px; /* アイコンサイズを調整 */
-    height: 24px; /* アイコンサイズを調整 */
+    width: 12px; /* アイコンサイズを調整 */
+    height: 12px; /* アイコンサイズを調整 */
     vertical-align: middle; /* 垂直方向中央揃え */
     border-radius: 0; /* 角を丸めない */
 }
