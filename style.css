@@ -34,7 +34,7 @@ main {
     display: flex;
     justify-content: center; /* 水平方向の中央揃え */
     align-items: center; /* 垂直方向の中央揃え */
-    padding: 20px; /* 上下左右の余白 */
+    padding: 10px; /* 上下左右の余白 */
 }
 
 /* プロフィールカードのデザイン */
@@ -71,7 +71,7 @@ main {
 h2 {
     color: #000080; /* 水色系のアクセントカラー */
     font-size: 20px; /* 文字サイズ */
-    margin-top: 15px; /* 上の余白 */
+    margin-top: 5px; /* 上の余白 */
 }
 
 /* フッター（ページ最下部に固定） */
