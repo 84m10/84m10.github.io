@@ -44,14 +44,14 @@ main {
     width: 80%; /* 横幅を80%に */
     max-width: 400px; /* 最大幅を400pxに */
     border-radius: 10px; /* 角を丸く */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 影をつけて立体感を出す */
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  影をつけて立体感を出す */
     text-align: left; /* テキストを左揃え */
 }
 
 /* プロフィール画像 */
 .profile img {
-    width: 100px; /* 幅100px */
-    height: 100px; /* 高さ100px */
+    width: 200px; /* 幅100px */
+    height: 200px; /* 高さ100px */
     border-radius: 50%; /* 円形に */
     object-fit: cover; /* 画像を適切にトリミング */
     margin-bottom: 10px; /* 画像下に余白 */
