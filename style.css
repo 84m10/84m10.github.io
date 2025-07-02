@@ -47,7 +47,7 @@ main {
 /* プロフィールカードのデザイン (白い背景を維持) */
 .profile {
     background: white; /* 背景色を白に */
-    padding: 20px; /* 内側の余白 */
+    padding: 10px; /* 内側の余白 */
     width: 80%; /* 横幅を80%に */
     max-width: 400px; /* 最大幅を400pxに */
     /*border-radius: 10px;  角を丸く */
