@@ -40,14 +40,17 @@ main {
     display: flex;
     justify-content: center; /* 水平方向の中央揃え */
     align-items: center; /* 垂直方向の中央揃え */
-    padding-top: 5px;
+    padding-top: 0px;
    
 }
 
 /* プロフィールカードのデザイン (白い背景を維持) */
 .profile {
     background: white; /* 背景色を白に */
-    padding: 10px; /* 内側の余白 */
+    padding-top: 0px; /* 内側の余白 */
+    padding-right: 20px; /* 内側の余白 */
+    padding-left: 20px; /* 内側の余白 */
+    padding-bottom: 20px; /* 内側の余白 */
     width: 80%; /* 横幅を80%に */
     max-width: 400px; /* 最大幅を400pxに */
     /*border-radius: 10px;  角を丸く */
@@ -62,6 +65,7 @@ main {
     border-radius: 50%; /* 円形に */
     object-fit: cover; /* 画像を適切にトリミング */
     margin-bottom: 10px; /* 画像下に余白 */
+    padding-top: 0px; /* 内側の余白 */
 }
 
 /* メールアイコン・GitHubアイコンなど、角を丸めたくない画像用 (下線防止のために border-radius:0 を含む) */
@@ -75,6 +79,7 @@ main {
 h2 {
     color: #000080; /* 水色系のアクセントカラー */
     font-size: 20px; /* 文字サイズ */
+    padding-top: 0px; /* 内側の余白 */
     margin-top: 15px; /* 上の余白 */
 }
 
