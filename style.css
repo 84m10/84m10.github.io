@@ -41,7 +41,7 @@ main {
     justify-content: center; /* 水平方向の中央揃え */
     align-items: center; /* 垂直方向の中央揃え */
     padding-top: 5px;
-    padding: 20px; /* 上下左右の余白 */
+   
 }
 
 /* プロフィールカードのデザイン (白い背景を維持) */
