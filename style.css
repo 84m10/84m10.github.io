@@ -60,8 +60,8 @@ main {
 
 /* プロフィール画像 (円形を維持) */
 .profile img {
-    width: 200px; /* 幅100px */
-    height: 200px; /* 高さ100px */
+    width: 100px; /* 幅100px */
+    height: 100px; /* 高さ100px */
     /*border-radius: 50%; /* 円形に */
     object-fit: cover; /* 画像を適切にトリミング */
     margin-bottom: 10px; /* 画像下に余白 */
