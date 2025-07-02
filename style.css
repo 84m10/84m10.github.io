@@ -30,7 +30,7 @@ header {
     background: rgba(255, 224, 189, 0.7); /* 元の肌色系の半透明 */
     /* background: rgba(255, 255, 255, 0.7); /* 前回の白 */
     color: #000080; /* 文字色を白に (元の指定は white でしたが、今は #000080 に変更されています) */
-    padding: 20px; /* 内側の余白 */
+    padding: 10px; /* 内側の余白 */
     font-size: 24px; /* 文字の大きさ */
 }
 
@@ -62,7 +62,7 @@ main {
 .profile img {
     width: 100px; /* 幅100px */
     height: 100px; /* 高さ100px */
-    border-radius: 50%; /* 円形に */
+    /*border-radius: 50%; /* 円形に */
     object-fit: cover; /* 画像を適切にトリミング */
     margin-bottom: 10px; /* 画像下に余白 */
     padding-top: 0px; /* 内側の余白 */
@@ -80,7 +80,7 @@ h2 {
     color: #000080; /* 水色系のアクセントカラー */
     font-size: 20px; /* 文字サイズ */
     padding-top: 0px; /* 内側の余白 */
-    margin-top: 15px; /* 上の余白 */
+    margin-top: 5px; /* 上の余白 */
 }
 
 /* フッター（ページ最下部に固定） */
